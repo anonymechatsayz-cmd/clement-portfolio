@@ -44,7 +44,7 @@ export default function Process() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-4">
             Comment ça marche ?
           </h2>
-          <p className="text-lg text-dark/60 max-w-2xl mx-auto">
+          <p className="text-lg text-dark font-medium max-w-2xl mx-auto leading-relaxed">
             Du premier contact au site en ligne en 7 jours
           </p>
         </motion.div>
@@ -104,7 +104,7 @@ export default function Process() {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-cta text-white text-lg font-semibold rounded-lg hover:bg-cta-hover hover:scale-102 hover:shadow-lg transition-all duration-200"
+            className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-cta to-cta-hover text-white text-lg font-bold rounded-xl border-2 border-accent/20 hover:scale-105 hover:shadow-2xl transition-all duration-200"
           >
             Démarrons votre projet
           </a>

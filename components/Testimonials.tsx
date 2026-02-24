@@ -33,7 +33,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="relative bg-gradient-to-br from-primary to-primary-light rounded-3xl p-10 md:p-14 text-white shadow-2xl"
+              className="relative bg-gradient-to-br from-primary to-primary-light rounded-3xl p-10 md:p-14 text-white shadow-2xl border-2 border-accent/30"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}

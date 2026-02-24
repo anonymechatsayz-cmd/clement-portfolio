@@ -42,7 +42,7 @@ export default function Services() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-4">
             Ce que j'offre
           </h2>
-          <p className="text-lg text-dark/60 max-w-2xl mx-auto">
+          <p className="text-lg text-dark font-medium max-w-2xl mx-auto leading-relaxed">
             Sites sur-mesure qui convertissent
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ export default function Services() {
                 <h3 className="text-xl font-bold text-dark mb-3">
                   {service.title}
                 </h3>
-                <p className="text-dark/80 leading-relaxed font-medium">
+                <p className="text-dark leading-relaxed font-medium">
                   {service.description}
                 </p>
               </motion.div>

@@ -54,7 +54,7 @@ export default function Portfolio() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-4">
             Réalisations Récentes
           </h2>
-          <p className="text-lg text-dark/60 max-w-2xl mx-auto">
+          <p className="text-lg text-dark font-medium max-w-2xl mx-auto leading-relaxed">
             Sites performants pour PME locales
           </p>
         </motion.div>
@@ -101,7 +101,7 @@ export default function Portfolio() {
                 <div className="space-y-6 mb-8">
                   <div>
                     <h4 className="font-semibold text-dark mb-2">Challenge</h4>
-                    <p className="text-dark/70 text-sm leading-relaxed">
+                    <p className="text-dark font-medium text-sm leading-relaxed">
                       {featuredProject.challenge}
                     </p>
                   </div>
@@ -110,7 +110,7 @@ export default function Portfolio() {
                     <h4 className="font-semibold text-dark mb-2">Solution</h4>
                     <ul className="space-y-2">
                       {featuredProject.solution.map((item, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm text-dark/70">
+                        <li key={index} className="flex items-start gap-2 text-sm text-dark font-medium">
                           <span className="text-accent mt-1">•</span>
                           <span>{item}</span>
                         </li>
@@ -126,7 +126,7 @@ export default function Portfolio() {
                           <div className="text-2xl font-bold text-primary mb-1">
                             {result.value}
                           </div>
-                          <div className="text-xs text-dark/60">
+                          <div className="text-xs text-dark/80 font-semibold">
                             {result.label}
                           </div>
                         </div>
@@ -160,12 +160,12 @@ export default function Portfolio() {
           {otherProjects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 border border-dark/5 hover:border-primary/20 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+              className="group bg-white rounded-2xl p-8 border-2 border-dark/5 hover:border-primary/20 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
             >
               <div className="aspect-video bg-gradient-to-br from-surface to-primary/5 rounded-xl mb-6 flex items-center justify-center">
-                <div className="text-center px-6 text-dark/20">
+                <div className="text-center px-6 text-dark font-medium">
                   <div className="text-2xl font-bold mb-1">{project.title}</div>
-                  <div className="text-sm">Mockup à venir</div>
+                  <div className="text-sm text-dark/80">Mockup à venir</div>
                 </div>
               </div>
 
@@ -180,7 +180,7 @@ export default function Portfolio() {
                 )}
               </div>
 
-              <p className="text-dark/60 text-sm mb-4">
+              <p className="text-dark text-sm font-medium mb-4">
                 {project.type} • {project.location}
               </p>
             </div>

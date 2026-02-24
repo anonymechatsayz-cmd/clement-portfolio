@@ -27,7 +27,7 @@ export default function Hero() {
         </motion.h1>
         
         <motion.p 
-          className="text-lg sm:text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg sm:text-xl text-white mb-10 max-w-2xl mx-auto leading-relaxed font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -45,13 +45,13 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-cta text-white text-lg font-semibold rounded-lg hover:bg-cta-hover hover:scale-102 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cta focus:ring-offset-2 focus:ring-offset-transparent"
+            className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-cta to-cta-hover text-white text-lg font-bold rounded-full shadow-xl hover:scale-105 hover:shadow-2xl hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cta focus:ring-offset-2 focus:ring-offset-transparent"
           >
             Réserver un appel gratuit
           </a>
           <a
             href="#portfolio"
-            className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white text-lg font-semibold rounded-lg hover:border-white/60 hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
+            className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white text-lg font-bold rounded-full hover:border-white/60 hover:bg-white/10 hover:scale-105 hover:shadow-2xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
           >
             Voir les résultats
           </a>

@@ -44,7 +44,7 @@ export default function FloatingCTA() {
             {/* Content */}
             <span className="relative flex items-center gap-3">
               <Phone className="w-5 h-5" />
-              <span className="font-semibold whitespace-nowrap">
+              <span className="font-bold whitespace-nowrap">
                 Appel Gratuit
               </span>
             </span>

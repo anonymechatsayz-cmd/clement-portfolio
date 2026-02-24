@@ -62,7 +62,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark mb-4">
             Prêt à démarrer ?
           </h2>
-          <p className="text-lg text-dark/60">
+          <p className="text-lg text-dark font-medium leading-relaxed">
             Réponse sous 24h garantie
           </p>
         </motion.div>
@@ -84,7 +84,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-dark mb-3">
                   Message envoyé !
                 </h3>
-                <p className="text-dark/70">
+                <p className="text-dark font-medium">
                   Je vous réponds sous 24h. À très vite !
                 </p>
               </div>

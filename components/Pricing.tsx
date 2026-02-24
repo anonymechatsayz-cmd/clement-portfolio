@@ -88,7 +88,7 @@ export default function Pricing() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Tarifs Transparents
           </h2>
-          <p className="text-lg text-white/70 mb-2">
+          <p className="text-lg text-white font-medium mb-2">
             Pas de frais cachés. Paiement en 2 fois (50% début, 50% livraison).
           </p>
         </motion.div>
@@ -127,7 +127,7 @@ export default function Pricing() {
                 <h3 className={`text-2xl font-black mb-2 ${plan.highlighted ? 'text-primary' : 'text-white'}`}>
                   {plan.name}
                 </h3>
-                <p className={`text-sm mb-4 font-medium ${plan.highlighted ? 'text-dark/70' : 'text-white/70'}`}>
+                <p className={`text-sm mb-4 font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
                   {plan.description}
                 </p>
                 <div className={`text-5xl font-black ${plan.highlighted ? 'text-accent' : 'text-accent'}`}>
@@ -171,7 +171,7 @@ export default function Pricing() {
 
         {/* Note garantie */}
         <motion.p
-          className="text-center text-white/60 mt-12 text-sm"
+          className="text-center text-white/80 mt-12 text-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
