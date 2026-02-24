@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Check, Star } from 'lucide-react'
+import { Variants } from 'framer-motion'
 
 const plans = [
   {
@@ -54,7 +55,7 @@ const plans = [
   },
 ]
 
-const containerVariants = {
+const containerVariants: Variants= {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -65,7 +66,7 @@ const containerVariants = {
   },
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
