@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import { motion } from 'framer-motion'
 import { Code2, TrendingUp, Zap, Check } from 'lucide-react'
@@ -58,15 +58,15 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group p-8 bg-surface rounded-2xl border border-dark/5 hover:border-primary/20 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                className="group p-8 bg-white rounded-2xl border-2 border-primary/10 hover:border-accent/40 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <Icon className="w-7 h-7 text-primary" strokeWidth={2} />
+                <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
+                  <Icon className="w-7 h-7 text-white" strokeWidth={2.5} />
                 </div>
-                <h3 className="text-xl font-semibold text-dark mb-3">
+                <h3 className="text-xl font-bold text-dark mb-3">
                   {service.title}
                 </h3>
-                <p className="text-dark/70 leading-relaxed">
+                <p className="text-dark/80 leading-relaxed font-medium">
                   {service.description}
                 </p>
               </motion.div>
@@ -76,7 +76,7 @@ export default function Services() {
 
         {/* Bonus inclus */}
         <motion.div
-          className="max-w-3xl mx-auto bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 border border-accent/20"
+          className="max-w-3xl mx-auto bg-gradient-to-br from-accent/10 via-accent/5 to-primary/5 rounded-2xl p-8 border-2 border-accent/30 shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -88,10 +88,10 @@ export default function Services() {
           <div className="grid sm:grid-cols-2 gap-4">
             {bonus.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Check className="w-4 h-4 text-accent" strokeWidth={3} />
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-white" strokeWidth={3} />
                 </div>
-                <span className="text-dark/80 font-medium">{item}</span>
+                <span className="text-dark font-semibold">{item}</span>
               </div>
             ))}
           </div>

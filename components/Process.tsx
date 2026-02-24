@@ -66,25 +66,25 @@ export default function Process() {
                 <div className="flex gap-6 md:gap-8 pb-12">
                   {/* Icône et ligne */}
                   <div className="flex flex-col items-center">
-                    <div className="w-14 h-14 md:w-16 md:h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
-                      <Icon className="w-7 h-7 md:w-8 md:h-8 text-white" strokeWidth={2} />
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center flex-shrink-0 shadow-xl border-2 border-accent/30">
+                      <Icon className="w-7 h-7 md:w-8 md:h-8 text-white" strokeWidth={2.5} />
                     </div>
                     {!isLast && (
-                      <div className="w-0.5 h-full bg-gradient-to-b from-primary to-primary/20 mt-4" />
+                      <div className="w-1 h-full bg-gradient-to-b from-accent via-primary to-accent/30 mt-4 rounded-full" />
                     )}
                   </div>
 
                   {/* Contenu */}
                   <div className="flex-1 pt-2">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-5xl font-bold text-primary/10 leading-none">
+                      <span className="text-6xl font-black text-accent/20 leading-none">
                         {step.number}
                       </span>
-                      <h3 className="text-2xl md:text-3xl font-bold text-dark">
+                      <h3 className="text-2xl md:text-3xl font-black text-dark">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-dark/70 leading-relaxed text-lg">
+                    <p className="text-dark font-medium leading-relaxed text-lg">
                       {step.description}
                     </p>
                   </div>

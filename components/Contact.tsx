@@ -195,22 +195,22 @@ export default function Contact() {
 
           {/* Infos contact */}
           <motion.div
-            className="space-y-6"
+            <div className="space-y-6"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-white rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 border-2 border-primary/10 shadow-lg">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark mb-1">Email</h3>
+                  <h3 className="font-bold text-dark mb-1">Email</h3>
                   <a
                     href="mailto:contact@clementfranjou.fr"
-                    className="text-dark/70 hover:text-primary transition-colors"
+                    className="text-dark font-medium hover:text-accent transition-colors"
                   >
                     contact@clementfranjou.fr
                   </a>
@@ -218,26 +218,26 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 border-2 border-primary/10 shadow-lg">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark mb-1">Localisation</h3>
-                  <p className="text-dark/70">Paris, Île-de-France</p>
+                  <h3 className="font-bold text-dark mb-1">Localisation</h3>
+                  <p className="text-dark font-medium">Paris, Île-de-France</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6">
+            <div className="bg-white rounded-2xl p-6 border-2 border-primary/10 shadow-lg">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark mb-1">Disponibilité</h3>
-                  <p className="text-dark/70">Lun-Ven, 9h-19h</p>
+                  <h3 className="font-bold text-dark mb-1">Disponibilité</h3>
+                  <p className="text-dark font-medium">Lun-Ven, 9h-19h</p>
                 </div>
               </div>
             </div>

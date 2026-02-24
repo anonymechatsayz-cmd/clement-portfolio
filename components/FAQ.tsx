@@ -53,7 +53,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="bg-surface rounded-2xl border border-dark/5 overflow-hidden"
+              className="bg-white rounded-2xl border-2 border-primary/10 overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -61,16 +61,17 @@ export default function FAQ() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-dark/5 transition-colors duration-200"
+                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-accent/5 transition-colors duration-200"
                 aria-expanded={openIndex === index}
               >
-                <span className="text-lg font-semibold text-dark pr-8">
+                <span className="text-lg font-bold text-dark pr-8">
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
+                  strokeWidth={3}
                 />
               </button>
 
@@ -82,8 +83,8 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
-                    <div className="px-6 pb-5">
-                      <p className="text-dark/70 leading-relaxed">
+                    <div className="px-6 pb-5 border-t-2 border-primary/10">
+                      <p className="text-dark font-medium leading-relaxed pt-4">
                         {faq.answer}
                       </p>
                     </div>
@@ -102,12 +103,12 @@ export default function FAQ() {
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
         >
-          <p className="text-dark/60 mb-6">
+          <p className="text-dark font-semibold mb-6 text-lg">
             Une autre question ?
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-dark text-white text-lg font-semibold rounded-lg hover:bg-primary hover:scale-102 transition-all duration-200"
+            className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-primary to-primary-light text-white text-lg font-bold rounded-xl hover:scale-105 hover:shadow-2xl transition-all duration-200 border-2 border-accent/20"
           >
             Contactez-moi
           </a>

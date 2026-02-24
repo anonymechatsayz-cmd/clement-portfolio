@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client'
 
 import { motion } from 'framer-motion'
@@ -71,7 +70,7 @@ const cardVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6 },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 }
 
@@ -106,17 +105,17 @@ export default function Pricing() {
               key={index}
               variants={cardVariants}
               className={`
-                relative rounded-3xl p-8 flex flex-col
+                relative rounded-3xl p-8 flex flex-col border-2
                 ${plan.highlighted 
-                  ? 'bg-white text-dark shadow-2xl scale-105 lg:scale-110 z-10' 
-                  : 'bg-white/5 backdrop-blur-sm border border-white/10'
+                  ? 'bg-gradient-to-br from-white via-white to-accent/5 text-dark shadow-2xl scale-105 lg:scale-110 z-10 border-accent' 
+                  : 'bg-gradient-to-br from-dark/95 to-primary text-white backdrop-blur-sm border-white/10'
                 }
               `}
             >
               {/* Badge */}
               {plan.badge && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="flex items-center gap-1 bg-accent px-4 py-1.5 rounded-full text-sm font-semibold text-dark">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                  <div className="flex items-center gap-1 bg-gradient-to-r from-accent to-accent/80 px-6 py-2 rounded-full text-sm font-black text-white shadow-xl border-2 border-white">
                     <Star className="w-4 h-4 fill-current" />
                     <span>{plan.badge}</span>
                   </div>
@@ -125,13 +124,13 @@ export default function Pricing() {
 
               {/* Header */}
               <div className="mb-6">
-                <h3 className={`text-2xl font-bold mb-2 ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
+                <h3 className={`text-2xl font-black mb-2 ${plan.highlighted ? 'text-primary' : 'text-white'}`}>
                   {plan.name}
                 </h3>
-                <p className={`text-sm mb-4 ${plan.highlighted ? 'text-dark/60' : 'text-white/60'}`}>
+                <p className={`text-sm mb-4 font-medium ${plan.highlighted ? 'text-dark/70' : 'text-white/70'}`}>
                   {plan.description}
                 </p>
-                <div className={`text-5xl font-bold ${plan.highlighted ? 'text-primary' : 'text-white'}`}>
+                <div className={`text-5xl font-black ${plan.highlighted ? 'text-accent' : 'text-accent'}`}>
                   {plan.price}
                 </div>
               </div>
@@ -142,11 +141,11 @@ export default function Pricing() {
                   <li key={featureIndex} className="flex items-start gap-3">
                     <Check 
                       className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                        plan.highlighted ? 'text-accent' : 'text-accent/80'
+                        plan.highlighted ? 'text-accent' : 'text-accent'
                       }`}
                       strokeWidth={3}
                     />
-                    <span className={`text-sm ${plan.highlighted ? 'text-dark/80' : 'text-white/80'}`}>
+                    <span className={`text-sm font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
                       {feature}
                     </span>
                   </li>
@@ -157,10 +156,10 @@ export default function Pricing() {
               <a
                 href="#contact"
                 className={`
-                  block text-center px-6 py-4 rounded-xl font-semibold transition-all duration-200
+                  block text-center px-6 py-4 rounded-xl font-bold transition-all duration-200 border-2
                   ${plan.highlighted
-                    ? 'bg-cta text-white hover:bg-cta-hover hover:scale-102 shadow-lg hover:shadow-xl'
-                    : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
+                    ? 'bg-gradient-to-r from-cta to-cta-hover text-white hover:scale-105 shadow-xl hover:shadow-2xl border-cta'
+                    : 'bg-white/10 text-white hover:bg-white/20 border-white/30 hover:border-accent'
                   }
                 `}
               >

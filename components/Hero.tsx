@@ -10,7 +10,10 @@ export default function Hero() {
       <div className="absolute inset-0 hero-gradient -z-10" />
       
       {/* Overlay sombre pour meilleur contraste texte */}
-      <div className="absolute inset-0 bg-black/20 -z-10" />
+      <div className="absolute inset-0 bg-black/40 -z-10" />
+      
+      {/* Glow accent en bas */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-accent/10 blur-[120px] -z-10" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
         <motion.h1 
