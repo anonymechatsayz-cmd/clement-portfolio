@@ -195,7 +195,7 @@ export default function Contact() {
 
           {/* Infos contact */}
           <motion.div
-            <div className="space-y-6"
+            className="space-y-6"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
