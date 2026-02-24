@@ -76,7 +76,7 @@ const cardVariants = {
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 sm:py-28 bg-dark text-white">
+    <section id="pricing" className="py-20 sm:py-28 bg-[#0F172A] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -107,7 +107,7 @@ export default function Pricing() {
               className={`
                 relative rounded-3xl p-8 flex flex-col border-2
                 ${plan.highlighted 
-                  ? 'bg-gradient-to-br from-white via-white to-accent/5 text-dark shadow-2xl scale-105 lg:scale-110 z-10 border-accent' 
+                  ? 'bg-gradient-to-br from-white via-primary/5 to-accent/10 text-dark shadow-2xl scale-105 lg:scale-110 z-10 border-accent' 
                   : 'bg-gradient-to-br from-dark/95 to-primary text-white backdrop-blur-sm border-white/10'
                 }
               `}
@@ -127,7 +127,7 @@ export default function Pricing() {
                 <h3 className={`text-2xl font-black mb-2 ${plan.highlighted ? 'text-primary' : 'text-white'}`}>
                   {plan.name}
                 </h3>
-                <p className={`text-sm mb-4 font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
+                <p className={`text-base md:text-lg mb-4 font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
                   {plan.description}
                 </p>
                 <div className={`text-5xl font-black ${plan.highlighted ? 'text-accent' : 'text-accent'}`}>
@@ -145,7 +145,7 @@ export default function Pricing() {
                       }`}
                       strokeWidth={3}
                     />
-                    <span className={`text-sm font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
+                    <span className={`text-base font-medium ${plan.highlighted ? 'text-dark' : 'text-white'}`}>
                       {feature}
                     </span>
                   </li>

@@ -94,7 +94,7 @@ export default function Portfolio() {
                 <h3 className="text-3xl font-bold text-dark mb-2">
                   {featuredProject.title}
                 </h3>
-                <p className="text-dark/60 mb-6">
+                <p className="text-lg text-dark font-medium mb-6">
                   {featuredProject.type} • {featuredProject.location}
                 </p>
 
@@ -174,7 +174,7 @@ export default function Portfolio() {
                   {project.title}
                 </h3>
                 {project.conceptual && (
-                  <span className="text-xs px-3 py-1 bg-dark/5 text-dark/60 rounded-full">
+                  <span className="text-xs px-3 py-1 bg-dark/5 text-dark/80 font-semibold rounded-full">
                     Conceptuel
                   </span>
                 )}
